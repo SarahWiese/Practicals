@@ -8,3 +8,10 @@ print("The smallest number is", min(numbers))
 print("The largest number is", max(numbers))
 print("The average of the numbers is", sum(numbers) / 5)
 
+# Woefully inadequate security checker
+usernames = ["jimbo", "giltson98", "derekf", "WhatSup", "NicolEye", "swei45", "BaseInterpreterInterface", "BaseStdIn", "Command", "ExecState", "InteractiveConcsole", "InterpreterInterface", "StartServer", "bob"]
+username = str(input("Enter username:"))
+if username in usernames:
+    print("Access granted")
+else:
+    print("Access denied")
