@@ -9,7 +9,7 @@ numbers[3:4]
 "3" in numbers
 numbers + [6, 5, 3]
 
-# numbers[0]            3
+# numbers[0]             3
 # numbers[-1]           9 /  2
 # numbers[3]            1
 # numbers[:1]           3, 1, 4, 1, 5, 9, 2     / 3
@@ -18,3 +18,8 @@ numbers + [6, 5, 3]
 # 7 in numbers          0   /False
 # "3" in numbers        0   / False
 # numbers + [6, 5, 3]   3, 1, 4, 1, 5, 9, 2, 6, 5, 3
+
+numbers[0] = 10
+numbers[-1] = 1
+print(numbers[2:])
+9 in numbers
