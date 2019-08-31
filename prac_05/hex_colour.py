@@ -4,14 +4,14 @@ HEX_COLOURS = {"red1": "#ff0000", "purple": "#9020f0", "SpringGreen2": "#00ee76"
 
 def main():
     """Program to return hexadecimal colour codes when colour name is entered."""
-    colour = str(input("Enter colour name: "))
+    colour = input("Enter colour name: ")
     while colour != "":
         if not is_colour_name_valid(colour):
             print((HEX_COLOURS[colour]))
-            colour = str(input("Enter colour name:"))
+            colour = input("Enter colour name:")
         else:
             print("Invalid name!")
-            colour = str(input("Enter colour name:"))
+            colour = input("Enter colour name:")
 
 
 def is_colour_name_valid(colour):
@@ -23,5 +23,6 @@ def is_colour_name_valid(colour):
 
 
 main()
+
 
 
