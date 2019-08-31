@@ -3,7 +3,7 @@
 
 def main():
     """Program to count occurrences of words in a string."""
-    sentence = str(input("Enter sentence: ")).split()
+    sentence = input("Enter sentence: ").split()
     sentence.sort()
     sentence_dict = {}
     for word in sentence:
@@ -12,17 +12,8 @@ def main():
         else:
             sentence_dict[word] = 1
     for word, count in sentence_dict.items():
-        print("{:{}} : {}".format(word, max_length_word(sentence), count))
-
-
-def max_length_word(sentence):
-    """Find longest word in sentence."""
-    longest_word = 0
-    for words in sentence:
-        if len(words) > longest_word:
-            longest_word = len(words)
-            print(longest_word)
-        return longest_word
+        max_length = max((len(word) for word in sentence))
+        print("{:{}} : {}".format(word, max_length, count))
 
 
 main()
